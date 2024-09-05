@@ -1,35 +1,6 @@
 
 letters = 'abcdefghijklmnopqrstuvwxyz'
 num_letters = len(letters)
-# def encrypt(text, key):
-#     cipherText = ''
-#     for letter in text:
-#         letter = letter.lower()
-#         if not letter == ' ': # making sure no space included
-#             index = letters.find(letter) # return index of text letter in the letters (return -1 if not found)
-#             if index == -1:
-#                 cipherText += letter # add it as it is
-#             else: #success
-#                 new_index = index + key
-#                 if new_index >= num_letters: # if index exceeded 25, is 26 (empty) (0-25 index) then go to the begining off the letters
-#                     new_index -= num_letters
-#                 cipherText += letters[new_index]
-#     return cipherText
-# def decrypt(text, key):
-#     cipherText = ''
-#     for letter in text:
-#         letter = letter.lower()
-#         if not letter == ' ': # making sure no space included
-#             index = letters.find(letter) # return index of text letter in the letters (return -1 if not found)
-#             if index == -1:
-#                 cipherText += letter # add it as it is
-#             else: #success
-#                 new_index = index - key
-#                 if new_index < 0:
-#                     new_index += num_letters
-#                 cipherText += letters[new_index]
-#
-#     return cipherText
 
 def enc_dec(text, key, mode):
     result = ''
